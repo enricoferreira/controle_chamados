@@ -1,16 +1,14 @@
 <template>
-    <v-row>
-        <v-col cols="12">
-            <v-card class="light_shadow">
-                <v-card-title>
-                    Últimos 7 dias
-                </v-card-title>
-                <v-card-text>
-                    <apexchart height="300" type="area" :options="week_options" :series="serie_7_dias"></apexchart>
-                </v-card-text>
-            </v-card>
-        </v-col>
-    </v-row>
+    <v-col cols="6">
+        <v-card class="light_shadow">
+            <v-card-title>
+                Quantidade de chamados nos 7 dias anteriores
+            </v-card-title>
+            <v-card-text>
+                <apexchart height="230" type="area" :options="week_options" :series="serie_7_dias"></apexchart>
+            </v-card-text>
+        </v-card>
+    </v-col>
 </template>
 
 <script setup>
