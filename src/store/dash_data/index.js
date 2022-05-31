@@ -9,7 +9,7 @@ export const useDataChartStore = defineStore('data_chart', {
         },
         {
             nome: 'Chamados ontem',
-            v: 33,
+            v: 31,
         },
         {
             nome: 'Média chamados',
