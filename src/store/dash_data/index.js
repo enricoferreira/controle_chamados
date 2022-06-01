@@ -26,6 +26,26 @@ export const useDataChartStore = defineStore('data_chart', {
       name: 'Chamado por clientes',
       data: [8, 10, 13, 43, 59]
     }],
+    series_channel: [{
+        name: 'Chat',
+        data: [44, 55, 41, 67, 22, 43, 21, 49]
+      }, {
+        name: 'E-mail',
+        data: [13, 23, 20, 8, 13, 27, 33, 12]
+      }, {
+        name: 'Reunião',
+        data: [11, 17, 15, 15, 21, 14, 15, 13]
+      },
+      {
+        name: 'Telefone',
+        data: [11, 17, 15, 15, 21, 14, 15, 13]
+      },
+      {
+        name: 'WhatsApp',
+        data: [11, 17, 15, 15, 21, 14, 15, 13]
+      }
+    ],
+    series_time_spent:[44, 15, 11, 17, 2],
     week_options: {
         chart: {
           id: 'options',
@@ -123,7 +143,53 @@ export const useDataChartStore = defineStore('data_chart', {
         }
 
       },
-    }
+    },
+    options_channel: {
+      chart: {
+        type: 'bar',
+        height: 300,
+        stacked: true,
+        stackType: '100%',
+        toolbar:{
+          show: false
+        }
+      },
+      grid: {
+        show: false
+      },
+      yaxis:{
+        show: false
+      },
+      xaxis: {
+        categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
+          '2012 Q3', '2012 Q4'
+        ],
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+      },
+      fill: {
+        opacity: 1
+      },
+      legend: {
+        show: false,
+        position: 'right',
+        offsetX: 0,
+        offsetY: 50
+      },
+    },
+    options_time_spent: {
+      chart: {
+        type: 'donut',
+      },
+      labels: ['30 min', '1 hora', '2 horas', '3 horas', '4 horas'],
+      legend: {
+        show: false
+      }
+    },
 
   }),
   getters: {
