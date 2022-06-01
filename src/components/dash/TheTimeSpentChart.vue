@@ -1,15 +1,15 @@
 <template>
     <v-col cols="12" md="6">
-        <v-card class="light_shadow">
+        <v-card class="light_shadow" style="height: 100% !important">
             <v-card-title>
-                Por onde os atendimentos foram feitos
+                Tempo gasto por atendimento
                 <v-icon size="17" class="ml-2" color="grey">mdi-information-outline</v-icon>
                 <v-spacer></v-spacer>
                 <v-btn flat icon="mdi-filter-outline">
                 </v-btn>
             </v-card-title>
             <v-card-text>
-                <apexchart type="bar" height="290" :options="options_channel" :series="series_channel"></apexchart>
+                <apexchart type="donut" height="300" :options="options_time_spent" :series="series_time_spent"></apexchart>
             </v-card-text>
         </v-card>
     </v-col>
@@ -20,7 +20,7 @@ import {useDataChartStore} from '@/store/dash_data';
 import {storeToRefs} from 'pinia'
 
 const store = useDataChartStore();
-const {options_channel, series_channel} = storeToRefs(store)
+const {options_time_spent, series_time_spent} = storeToRefs(store)
 </script>
 
 <style>
