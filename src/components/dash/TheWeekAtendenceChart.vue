@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="6">
+    <v-col cols="12" md="6">
         <v-card class="light_shadow">
             <v-card-title>
                 Quantidade de chamados nos 7 dias anteriores
