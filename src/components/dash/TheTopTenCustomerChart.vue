@@ -3,6 +3,10 @@
         <v-card class="light_shadow">
             <v-card-title>
                 Top 5 clientes chamados
+                <v-icon size="17" class="ml-2" color="grey">mdi-information-outline</v-icon>
+                <v-spacer></v-spacer>
+                <v-btn flat icon="mdi-filter-outline">
+                </v-btn>
             </v-card-title>
             <v-card-text>
                 <apexchart type="bar" height="230" :options="top_10_customers" :series="serie_10_customers"></apexchart>

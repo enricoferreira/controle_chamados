@@ -3,6 +3,10 @@
         <v-card class="light_shadow">
             <v-card-title>
                 Quantidade de chamados nos 7 dias anteriores
+                <v-icon size="17" class="ml-2" color="grey">mdi-information-outline</v-icon>
+                <v-spacer></v-spacer>
+                <v-btn flat icon="mdi-filter-outline">
+                </v-btn>
             </v-card-title>
             <v-card-text>
                 <apexchart height="230" type="area" :options="week_options" :series="serie_7_dias"></apexchart>
