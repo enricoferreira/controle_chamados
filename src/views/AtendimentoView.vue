@@ -1,11 +1,11 @@
 <template>
-    <div>atendimento</div>
+    <v-container>
+        <FormChamado/>
+    </v-container>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+    import FormChamado from '@/components/atendimento/FormChamado'
 </script>
 
 <style>

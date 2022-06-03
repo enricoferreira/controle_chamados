@@ -2,7 +2,7 @@
     <v-app-bar flat>
         <v-app-bar-nav-icon @click="toggle" color="primary" class="mr-md-2 mr-sm-0"></v-app-bar-nav-icon>
         <v-spacer></v-spacer>
-        <v-btn icon="mdi-phone-plus-outline" color="primary">
+        <v-btn icon="mdi-phone-plus-outline" :to="{name: 'Atendimentos'}">
         </v-btn>
         <v-btn icon="mdi-bell-outline">
         </v-btn>
